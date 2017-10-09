@@ -1,0 +1,387 @@
+<<<<<<< HEAD
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+*{margin:0;}
+
+
+
+html,body{
+	background-color: white;
+height: 100%;
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+margin: 0;
+padding:0;
+}
+
+
+.container{
+	width: 100%;
+	
+	margin-top: 0;
+	margin-left: 0 auto;
+}
+.wrap{
+	width: 80%;
+margin: auto;
+padding: auto;
+text-align: justify;}
+header{
+	background-color:white;
+	color:black;
+	padding: 0.5em 0;
+	opacity: 0;
+	position:fixed;
+	width:100%;
+	z-index: 99;
+	filter: grayscale(100%);
+	animation:0.1s all ease;}
+.scrolled{opacity: 1;
+	animation:0.1s all ease;}
+
+header:hover{
+	filter: grayscale(0%);}
+
+header::after{
+	content: '';
+	clear:both;
+	display: block;
+}
+
+.logo {
+	float: left;
+	font-size:1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding-left: 1em;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+
+
+.logo a{
+	
+	text-decoration: none;
+	color:#6D6D6D;
+}
+
+
+.logo img{padding-right: 0em; padding-top: 0em;}
+.site-nav{
+	top:100%;
+	right: 0;
+	position: absolute; 
+	background-color: white;
+	height: 0px;
+	overflow: hidden;
+	margin-top: 0;
+	padding-top: 0;}
+
+.site-nav--open{
+	height: auto;
+}
+.site-nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+}
+
+.site-nav li{
+	border-bottom: 0.7px solid #EAEAEA;
+}
+
+.site-nav li:last-child{
+	border-bottom: none;
+}
+.site-nav a{
+	color:#6D6D6D;
+	text-decoration: none;
+	display:block;
+	padding: 0.5em 1.5em;
+	
+
+}
+.site-nav a:hover,
+.site-nav a:focus{
+background-color: #D5D5D5;
+color:white;	
+}
+
+.menu-toggle{
+	padding: 1em;
+	position: absolute;
+	right: 1em;
+	top:2em;	
+	cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+	content: '';
+	display: block;
+	background-color: #A7A7A7;
+	height: 3px;
+	width: 1.75em;
+	border-radius: 3px;
+}
+
+.hamburger::before{
+	transform: translateY(-6px);
+}
+
+.hamburger::after{
+	transform: translateY(3px);
+}
+
+
+.sect{
+	height: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+.subSection{
+width: 100%;
+height: 80%;
+margin: 0;
+padding: 0;
+background-color: white;
+}
+.subSectionOne{color:#a3a3a3;
+letter-spacing: .015em;
+padding-bottom: 1.5em;
+height: 200%;}
+
+.subSectionTwo{
+	color:#6D6D6D;
+letter-spacing: .015em;
+padding-left: 1em;
+padding-bottom: 1.5em;
+}
+
+
+
+
+
+.sectOne{background-image: url("background1.jpg");}
+
+.sectOne h1{padding-top: 50%;
+			padding-left: 5%;
+			font-size: 20px;
+			color:#6D6D6D;
+			text-shadow: 1px 2px 2px rgba(158, 158, 158, 1)}
+ span{
+ 	color:#323232;
+	 }
+
+span:before{
+	content: 'Quality Sessions';
+	animation: animate infinite 8s;
+}
+
+
+@keyframes animate
+{
+	0%{ content: 'Hard Work';}
+	25%{content: 'Fun';}
+	50%{content: 'Progression';}
+	75%{content: 'Goal';}
+	100%{content: 'Sucess';}
+
+}
+
+
+.sectTwo{background-image: url("house.jpg");
+padding-top: 10%;
+padding-bottom: 10%;}
+
+
+
+
+.sectThree{background-color: #454545;);
+height: 140%;}
+
+
+
+
+/* --------------------------------------
+   about us section
+   -------------------------------------- */
+.subSectionOne h1{text-align: center;
+	font-style: bold;
+	color:#333;
+	padding-top: 0.5em;
+	letter-spacing: .015em;
+}
+.subSectionOne h2{
+	color:#6A6A6A;
+	letter-spacing: .015em;
+}
+.subSectionOne h4{color:#373737;
+padding-bottom: 0.5em;}
+
+
+
+
+/* --------------------------------------
+   Accommodation
+   -------------------------------------- */
+.subSectionThree{
+	width: 100%;
+	margin-top: 70%;
+	margin-left: 0%;
+	height: 25%;
+	background-color: white;
+	text-align: center;
+	letter-spacing: .015em;
+	text-decoration-style: bold;
+}
+
+.subSectionThree h1{color:#333;
+					padding-top: 10%;}
+.subSectionThree h2{color:#6A6A6A;}
+
+.subSectionFour{
+	width: 80%;
+	height: 170%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.gallery {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	padding-top: 10%;
+	list-style: none;
+}
+
+.gallery li {
+width: 40%;
+		float: left;
+		padding-left: 4%;
+		padding-right: 4%;
+		padding-top: 4%
+}
+.gallery li img{width: 100%;}
+
+
+
+
+
+
+
+
+
+/* --------------------------------------
+   our Team
+   -------------------------------------- */
+#team{
+	border-top:1px solid #ccc;
+}
+.gallery h1{color:#6A6A6A;}
+.gallery li h2{font-size: 12px;
+	color:#6A6A6A;
+}
+  .gallery li p{font-size: 10px;
+	color:#A7A7A7;
+}
+
+#team li img{
+border-radius: 50%;
+
+}
+.subSectionFourTeam{
+	height: 80%;
+}
+  
+  
+
+
+/* --------------------------------------
+   contact
+   -------------------------------------- */
+.first, .secound{color:white;
+letter-spacing: .015em;
+padding-left: 1em;
+padding-bottom: 1.5em;}
+
+.first h2, .secound h2{
+	padding-top:1em;
+	text-align: center;
+}
+
+#contact li{list-style: none;
+	display:inline-block;
+float:left;
+margin:2%;}
+
+
+#contact li a{
+	text-decoration: none;
+	color:white;
+
+}
+
+.maps{
+	width: 80%;
+	margin:auto;
+	margin-bottom: 2em;
+}
+
+
+
+footer{
+
+	text-align: center;
+	color:white;
+	background-color:#373737; 
+	padding-top: 1em;
+	padding-bottom: 1em;
+	margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+	.menu-toggle{
+		display: none;
+	}
+
+	.site-nav {
+		height: auto;
+		position: relative;
+		background:transparent;
+		float: right;
+	}
+	.site-nav li{
+		display: inline-block;
+		border:none;
+	}
+
+	.site-nav a{
+		padding: 0;
+		margin-left: 3em;
+	}
+
+	.site-nav a:hover,
+	.site-nav a:focus{
+		background:transparent;
+	}
+
+}
