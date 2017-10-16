@@ -169,7 +169,7 @@ padding-bottom: 1.5em;
 
 
 
-.sectOne{background-image: url("background1.jpg");}
+.sectOne{background-image: url("background1s.jpg");}
 
 .sectOne h1{padding-top: 50%;
 			padding-left: 5%;
@@ -195,15 +195,15 @@ span:before{
 	100%{content: 'Sucess';}
 
 }
-.sectOneplus{background-image: url("background4.jpg");
+.sectOneplus{background-image: url("background2S.jpg");
 padding-top: 10%;
 padding-bottom: 10%;}
 
-.sectTwo{background-image: url("house.jpg");
+.sectTwo{background-image: url("background4s.jpg");
 padding-top: 10%;
 padding-bottom: 10%;}
 
-.sectTwoPlus{background-image: url("background5.jpg");
+.sectTwoPlus{background-image: url("background3s.jpg");
 padding-top: 10%;
 padding-bottom: 10%;}
 
@@ -432,12 +432,15 @@ font-size: 16px;}
 .sectOneplus, .sectTwoPlus, .sectTwo, .sectThree{height: 80%;}
 
 #casa{height:120%;}
+
+
+.sectOne{background-image: url("background1M.jpg");}
+.sectOneplus{background-image: url("background2M.jpg");}
+.sectTwo{background-image: url("background4M.jpg");}
+.sectTwoPlus{background-image: url("background3M.jpg");}
+
+
 }
-
-
-
-
-
 
 
 
@@ -506,5 +509,24 @@ width:45%;
 float:right;
 margin:2.5px;}
 .sectThree{height: 120%;}
+
+.sectOne{background-image: url("background1ML.jpg");}
+.sectOneplus{background-image: url("background2ML.jpg");}
+.sectTwo{background-image: url("background4ML.jpg");}
+.sectTwoPlus{background-image: url("background3ML.jpg");}
+
+
 }
 
+@media screen and (min-width: 1280px) {
+
+.sectOne h1{padding-top: 15%;
+			padding-left: 10%;
+
+		}
+.sectOne{background-image: url("background1.jpg");}
+.sectOneplus{background-image: url("background2.jpg");}
+.sectTwo{background-image: url("background4.jpg");}
+.sectTwoPlus{background-image: url("background3.jpg");}
+
+}
