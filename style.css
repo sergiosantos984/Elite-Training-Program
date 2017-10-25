@@ -264,7 +264,7 @@ padding-bottom: 0.5em;}
 
 
 .subSectionFour{
-	width: 80%;
+	width: 100%;
 	height: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -304,6 +304,10 @@ width: 40%;
 	border-top:1px solid #ccc;
 	padding: 0;
 }
+.galleryHugo{width:90%; }
+.galleryHugo li{width:40%;}
+.galleryStaff{width: 90%; margin-top: 5%;}
+.galleryStaff li{width: 20%; margin-right: 5%; margin-left: 5%; padding: 0;position:relative;float: left;}
 .gallery h1{color:#6A6A6A;}
 .gallery li h2{font-size: 12px;
 	color:#6A6A6A;
@@ -366,6 +370,54 @@ footer{
 	margin-top: 0;
 }
 
+/*------------------------
+SLIDE
+------------------------*/
+.subSectionFourSlide{height: 45%; background-color: #454545;}
+  .blueberry { width: 100%; position: cover; height: 80%; }
+
+
+.blueberry { margin:auto; padding: auto; position: relative;display:solid-block;}
+.blueberry ul { padding: 0px; margin: 0px; list-style-type: none; }
+
+.slidernav {
+display: block;
+position: absolute;
+height: 41px;
+width:32px;
+overflow: hidden;
+cursor: pointer;
+top:40%;
+z-index: 100000;
+}
+
+
+.arrow_left {
+left:5px;
+position: absolute;
+top: 45%;
+}
+.arrow_right {
+right:5px;
+position: absolute;
+top: 45%;
+}
+.slides h1{
+	position: absolute;
+	padding-top:30%;
+	padding-left: 11%;
+	text-align: center;
+	font-size: 14px;
+	z-index: 100001;
+    text-shadow: 1px 3px 7px rgba(33, 33, 33, 0.8);
+    color: white;
+    font-family: "Gotham SSm A", "Gotham SSm B", "Gotham SSm A", "Gotham SSm B", Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 0em;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    line-height: 1.0em !important;
+}
 
 
 
@@ -426,9 +478,6 @@ margin-top: 35%;
 .subSectionOne{height: 80%;
 }
 
-#adjust{margin-top:10%;
-	margin-bottom: 35%;
-font-size: 16px;}
 
 #sports{
 	height: 90%;
@@ -445,6 +494,14 @@ font-size: 16px;}
 
 
 }
+
+/*----
+slide
+---*/
+.subSectionFourSlide{height: 65%;}
+
+.slides h1{font-size: 25px;
+			padding-left: 15%;}
 
 
 
@@ -487,21 +544,20 @@ padding-top: 0;
 
 
 
-#team .gallery li img{width: 59%;}
+#team .gallery li img{width: 100%;}
 .subSectionFourTeam{
 	height: 180%;
 }
- #adjust{
-	margin-bottom: 10%;
-font-size: 18px;} 
-#team .gallery li{width: 40%;
-		float: left;
-		padding-left: 4%;
-		padding-right: 4%;
-		padding-top: 4%;
-		padding-bottom: 8%;
+ 
+.gallerySatff {width: 90%;
+		margin: auto;
+		padding: auto;
+		margin-top: 5%;
 
 }
+.galleryStaff li{width: 20%;display: inline-block; margin:5%; float: left;}
+.galleryHugo {width:90%; margin: auto; padding: auto;;}
+.galleryHugo li{width:40%;}
 #casa{height: 190%;}
 
 .first{
@@ -521,10 +577,21 @@ margin:2.5px;}
 
 
 }
+@media screen and (min-width: 1024px) {
 
+
+.slides h1{
+			padding-left: 20%;
+			font-size: 45px;}
+.subSectionFourSlide{height: 65%;}
+
+
+
+
+}
 @media screen and (min-width: 1280px) {
 
-.sectOne h1{padding-top: 15%;
+.sectOne h1{padding-top: 10%;
 			padding-left: 10%;
 
 		}
@@ -532,5 +599,12 @@ margin:2.5px;}
 .sectOneplus{background-image: url("background2.jpg");}
 .sectTwo{background-image: url("background4.jpg");}
 .sectTwoPlus{background-image: url("background3.jpg");}
+
+
+.subSectionFourSlide{height: 150%;}
+.slides h1{padding-top: 28%;}}
+
+
+@media screen and (min-width: 1440px) {
 
 }

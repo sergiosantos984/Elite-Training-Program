@@ -7,10 +7,16 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Dosis" rel=
   "stylesheet">
+  <link rel="stylesheet" href="blueberry.css" />
   <link href="style.css" rel="stylesheet">
-  <link href="lightbox.css" rel="stylesheet">
-
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <style type="text/css">
+
+
+
+ 
+
+</style>
 </head>
 
 <body>
@@ -85,19 +91,19 @@
 </div>
 <div class="subSection subSectionFour subSectionFourTeam" id="team">
 
-	<ul class="gallery" >
+	<ul class="gallery galleryHugo" >
 			<h1 id="hugo">Team</h1>
 		<li >
-			<img src="staff1.jpg" >
+			<img src="staff1.jpeg" >
 			<h2>Hugo Leal</h2>
 			<p>CEO and Head Coach</p>
 		</li>
-		<li id="adjust"><p id="text">"After playing for Benfica, Atletico Madrid, PSG, FCP, Estoril Praia... I felt the next step should be share my knowledge and help the others being the best version of them selfes"</p></li>
+		<li> <img src="hugoText.jpg" style="margin-bottom: 23%;">
+		<h2></h2>
+			<p></p></li>
 	
 		</ul>
-		<br>
-<br>
-		<ul class="gallery">
+<ul class="gallery galleryStaff">
 		<li>
 			<img src="staff2.jpg">
 			<h2>Carlos Bernardo 'Cabé'</h2>
@@ -106,6 +112,11 @@
 			<li>
 			<img src="staff3.jpg">
 			<h2>Luis Silva</h2>
+			<p>Coach </p>
+		</li>	
+			<li>
+			<img src="staff4.jpeg">
+			<h2>Manuel Feist</h2>
 			<p>Coach </p>
 		</li>		
 	</ul>
@@ -158,40 +169,65 @@
 
 </div>
 
+<div class="subSection subSectionFour subSectionFourSlide " >
 
-<div class="subSection subSectionFour " id="casa">
-<ul class="gallery">
-	<li>
-		<a href="casa1.jpeg" data-lightbox="Pictures"><img src="casa1.jpeg"></a>
-	</li>
-		<li>
-		<a href="casa16.jpeg" data-lightbox="Pictures"><img src="casa16.jpeg"></a>
-	</li>
-		<li>
-		<a href="casa3.jpeg" data-lightbox="Pictures"><img src="casa3.jpeg"></a>
-	</li>
-		<li>
-		<a href="casa4.jpeg" data-lightbox="Pictures"><img src="casa4.jpeg"></a>
-	</li>
-		<li>
-		<a href="casa5.jpeg" data-lightbox="Pictures"><img src="casa5.jpeg"></a>
-	</li>
-	<li>
-		<a href="casa8.jpeg" data-lightbox="Pictures"><img src="casa8.jpeg"></a>
-	</li>
-		<li>
-		<a href="casa6.jpeg" data-lightbox="Pictures"><img src="casa6.jpeg"></a>
-	</li>
-		<li>
-		<a href="casa2.jpeg" data-lightbox="Pictures"><img src="casa2.jpeg"></a>
-	</li>
-	<li>
-		<a href="casa14.jpeg" data-lightbox="Pictures"><img src="casa14.jpeg"></a>
-	</li>
-		
-		
-</ul>	
+			<div class="blueberry">
+  			<ul class="slides">
+  			<h1>ESTORIL SPORTS RESIDENCE</h1>
+      		<li>
+      		<img src="casa1.jpeg" >
+      		</li>
 
+      		<li>
+      		<img src="casa2.jpeg"  >
+      		</li>
+
+      		<li>
+      		<img src="casa3.jpeg"  >
+      		</li>
+
+
+      		<li>
+      		<img src="casa4.jpeg"  >
+      		</li>
+  
+      		<li>
+      		<img src="casa5.jpeg"  >
+      		</li>
+
+      		<li>
+      		<img src="casa6.jpeg"  >
+      		</li> 
+
+      		<li>
+      		<img src="casa7.jpeg"  >
+      		</li> 
+
+     		<li>
+     		<img src="casa8.jpeg"  >
+      		</li> 
+
+    		<li>
+    		<img src="casa9.jpeg"  >
+    		</li>
+
+    		<li>
+    		<img src="casa10.jpeg"  >
+    		</li>
+
+    		<li>
+    		<img src="casa11.jpeg"  >
+    		</li>
+  
+ 			<li>
+    		<img src="casa13.jpeg"  >
+    		</li>
+  
+			</ul>
+<!-- Optional, see options below -->
+			</div>
+
+	
 </div>
 
 
@@ -231,8 +267,15 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
   <script src="app.js"></script>
- <script src="lightbox.min.js"></script>
+<script src="jquery.blueberry.js"></script>
+
+<script>
+$(window).load(function() {
+$('.blueberry').blueberry({ pager: false, lineheight: 0, arrows: true});
+});
+</script>
 
 </body>
 </html>
